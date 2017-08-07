@@ -1,0 +1,6 @@
+
+<ion-row>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button *ngFor="let tabs of this.profileSegments" [value]="tabs.value">{{tabs.title}}</ion-segment-button>
+  </ion-segment>
+</ion-row>

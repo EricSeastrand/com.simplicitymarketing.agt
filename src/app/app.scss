@@ -14,3 +14,34 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// SIDE MENU
+
+.side-logo {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.header-logo {
+  padding-left: 35%;
+  padding-right: 45%;
+}
+
+.ion-page {
+  .toolbar-background {
+    background: #ffffff;
+    border-bottom: map-get($colors, secondary) 5rem solid;
+  }
+}
+// TABS
+ion-tabs {
+  .scroll-content {
+    margin-bottom: 5.5rem;
+  }
+}
+
+.scroll-content {
+  background: url(../assets/images/texture-circuitry-fade.png) center top repeat-x;
+  background-size: 371px auto;
+
+}
