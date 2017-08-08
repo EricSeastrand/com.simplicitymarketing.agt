@@ -1,0 +1,29 @@
+<ion-list>
+  <!--  {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"}, -->
+  <ion-card *ngFor="let card of libraryCards">
+
+    <ion-card-content>
+      <ion-card-title>
+        {{card.title}}
+      </ion-card-title>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="secondary">
+          SHARE
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="primary">
+          DOWNLOAD
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small clear icon-start>
+          <ion-icon name='times'></ion-icon>
+          REMOVE
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-list>

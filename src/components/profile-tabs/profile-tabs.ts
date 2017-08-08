@@ -13,6 +13,8 @@ import { Component } from '@angular/core';
 export class ProfileTabsComponent {
 
   public profileSegments:any;
+    cards: any;
+    category: string = 'wall';
 
   constructor() {
     this.buildTabs();
@@ -31,5 +33,7 @@ export class ProfileTabsComponent {
           // {title: 'Platinum', value: "platinum"}
 
       ];
+
+      this.cards = new Array(10);
   }
 }

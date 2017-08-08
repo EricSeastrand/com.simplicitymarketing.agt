@@ -15,10 +15,13 @@ import {PathwayPage} from "../pages/pathway/pathway";
 import {HotAdvisorsPage} from "../pages/hot-advisors/hot-advisors";
 import {ProfilePage} from "../pages/profile/profile";
 import {ProfileTabsComponent} from "../components/profile-tabs/profile-tabs";
+import {LibraryListComponent} from "../components/library-list/library-list";
+import {LoginPage} from "../pages/login/login";
 
 @NgModule({
     declarations: [
         MyApp,
+        LoginPage,
         TabsPage,
         ProfilePage,
         LibraryPage,
@@ -26,7 +29,8 @@ import {ProfileTabsComponent} from "../components/profile-tabs/profile-tabs";
         LiveStreamingPage,
         PathwayPage,
         HotAdvisorsPage,
-        ProfileTabsComponent
+        ProfileTabsComponent,
+        LibraryListComponent
     ],
     imports: [
         BrowserModule,
@@ -35,6 +39,7 @@ import {ProfileTabsComponent} from "../components/profile-tabs/profile-tabs";
     bootstrap: [IonicApp],
     entryComponents: [
         MyApp,
+        LoginPage,
         TabsPage,
         ProfilePage,
         LibraryPage,
