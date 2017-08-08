@@ -1,25 +1,35 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'library-list',
-  templateUrl: 'library-list.html'
+    selector: 'library-list',
+    templateUrl: 'library-list.html'
 })
 export class LibraryListComponent {
 
-  public libraryCards: any;
+    public libraryCards: any;
 
-  constructor() {
+    constructor() {
 
-    this.libraryCards = [
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"},
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"},
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"},
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"},
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"},
-        {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"}
-    ]
-  }
+        this.libraryCards = [
+            {id: Math.random(), title: "File Name", icon: "fa-file-pdf-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "File Name", icon: "fa-file-video-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "File Name", icon: "fa-file-audio-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "File Name", icon: "fa-file-powerpoint-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "File Name", icon: "fa-file-word-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "File Name", icon: "fa-file-image-o", shareUrl: "#", downloadUrl: "#"}
+        ]
+    }
 
 
+    remove(id) {
 
+    }
+
+    download(downloadUrl) {
+
+    }
+
+    share(shareUrl) {
+
+    }
 }

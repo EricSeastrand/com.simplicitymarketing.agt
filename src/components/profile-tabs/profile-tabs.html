@@ -4,56 +4,9 @@
   </ion-segment>
 </ion-row>
 <ion-row>
-<div [ngSwitch]="category">
+  <div [ngSwitch]="category">
     <div *ngSwitchCase="'wall'">
-      <ion-card>
-        <ion-card-content>
-          <ion-card-header>
-            <ion-icon name="md-create"></ion-icon>
-            New Post
-          </ion-card-header>
-          <ion-textarea name="comment" placeholder="Put any comment..."></ion-textarea>
-        </ion-card-content>
-      </ion-card>
-      <ion-list>
-        <ion-card *ngFor="let card of cards">
-
-          <ion-item>
-            <ion-avatar item-left>
-              <img src="https://avatars.io/facebook/" />
-            </ion-avatar>
-            <h2>John Smith</h2>
-            <p>August 5, 2017</p>
-          </ion-item>
-
-          <img src="http://placehold.it/500x200" />
-
-          <ion-card-content>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </ion-card-content>
-
-          <ion-row>
-            <ion-col>
-              <button ion-button icon-left clear small>
-                <ion-icon name="thumbs-up"></ion-icon>
-                <div>12 Likes</div>
-              </button>
-            </ion-col>
-            <ion-col>
-              <button ion-button icon-left clear small>
-                <ion-icon name="text"></ion-icon>
-                <div>4 Comments</div>
-              </button>
-            </ion-col>
-            <ion-col center text-center>
-              <ion-note>
-                11h ago
-              </ion-note>
-            </ion-col>
-          </ion-row>
-
-        </ion-card>
-      </ion-list>
+      <profile-wall></profile-wall>
     </div>
 
 
@@ -62,7 +15,7 @@
       <ion-list>
         <ion-card>
           <ion-card-header>
-           <h3 class="lead">About John Smith</h3>
+            <h3 class="lead">About John Smith</h3>
           </ion-card-header>
           <ion-card-content>
             Throughout David’s career in insurance he always worked closely with annuities and life insurance, whether it was preparing competitor comparisons, performing due diligence for reinsurance acquisitions, pricing products or organizing marketing strategies. David enjoys all aspects of business and investment and studied finance at ASU’s W.P. Carey School of Business, graduating in 2006 with honors. He also holds an Arizona Life and Health insurance license and has produced business.
@@ -73,12 +26,12 @@
 
     <div *ngSwitchCase="'library'">
       <!--<ion-list>
-        <ion-card *ngFor="let card of cards">
-          <ion-card-content>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </ion-card-content>
-        </ion-card>
-      </ion-list>-->
+  <ion-card *ngFor="let card of cards">
+	<ion-card-content>
+	  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+	</ion-card-content>
+  </ion-card>
+</ion-list>-->
       <library-list></library-list>
     </div>
   </div>

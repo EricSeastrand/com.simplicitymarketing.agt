@@ -17,6 +17,7 @@ import {ProfilePage} from "../pages/profile/profile";
 import {ProfileTabsComponent} from "../components/profile-tabs/profile-tabs";
 import {LibraryListComponent} from "../components/library-list/library-list";
 import {LoginPage} from "../pages/login/login";
+import {ProfileWallComponent} from "../components/profile-wall/profile-wall";
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import {LoginPage} from "../pages/login/login";
         PathwayPage,
         HotAdvisorsPage,
         ProfileTabsComponent,
-        LibraryListComponent
+        LibraryListComponent,
+        ProfileWallComponent
     ],
     imports: [
         BrowserModule,

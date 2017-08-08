@@ -1,25 +1,25 @@
 <ion-list>
   <!--  {id: Math.random(), title: "File Name", icon: "", shareUrl: "#", downloadUrl: "#"}, -->
   <ion-card *ngFor="let card of libraryCards">
-
     <ion-card-content>
       <ion-card-title>
+        <i class="fa {{card.icon}}" aria-hidden="true"></i>
         {{card.title}}
       </ion-card-title>
     </ion-card-content>
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="secondary">
+        <button ion-button clear small color="secondary" (click)="this.share(card.shareUrl)">
           SHARE
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear small color="primary">
+        <button ion-button clear small color="primary" (click)="this.download(card.downloadUrl)">
           DOWNLOAD
         </button>
       </ion-col>
       <ion-col text-right>
-        <button ion-button clear small clear icon-start>
+        <button ion-button clear small icon-start (click)="this.remove(card.id)">
           <ion-icon name='times'></ion-icon>
           REMOVE
         </button>
