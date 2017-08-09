@@ -7,6 +7,7 @@ import {TabsPage} from "../pages/tabs/tabs";
 import {LiveStreamingPage} from "../pages/live-streaming/live-streaming";
 import {HotAdvisorsPage} from "../pages/hot-advisors/hot-advisors";
 import {LoginPage} from "../pages/login/login";
+import {PathwayPage} from "../pages/pathway/pathway";
 
 @Component({
   templateUrl: 'app.html'
@@ -14,7 +15,7 @@ import {LoginPage} from "../pages/login/login";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = PathwayPage;
 
   pages: Array<{title: string, component: any}>;
 

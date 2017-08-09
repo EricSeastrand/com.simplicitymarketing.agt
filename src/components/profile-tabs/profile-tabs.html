@@ -3,36 +3,31 @@
     <ion-segment-button *ngFor="let tabs of this.profileSegments" [value]="tabs.value">{{tabs.title}}</ion-segment-button>
   </ion-segment>
 </ion-row>
-<ion-row>
-  <div [ngSwitch]="category">
-    <div *ngSwitchCase="'wall'">
-      <profile-wall></profile-wall>
-    </div>
 
-
-
-    <div *ngSwitchCase="'bio'">
-      <ion-list>
-        <ion-card>
-          <ion-card-header>
-            <h3 class="lead">About John Smith</h3>
-          </ion-card-header>
-          <ion-card-content>
-            Throughout David’s career in insurance he always worked closely with annuities and life insurance, whether it was preparing competitor comparisons, performing due diligence for reinsurance acquisitions, pricing products or organizing marketing strategies. David enjoys all aspects of business and investment and studied finance at ASU’s W.P. Carey School of Business, graduating in 2006 with honors. He also holds an Arizona Life and Health insurance license and has produced business.
-          </ion-card-content>
-        </ion-card>
-      </ion-list>
-    </div>
-
-    <div *ngSwitchCase="'library'">
-      <!--<ion-list>
-  <ion-card *ngFor="let card of cards">
-	<ion-card-content>
-	  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-	</ion-card-content>
-  </ion-card>
-</ion-list>-->
-      <library-list></library-list>
-    </div>
+<div [ngSwitch]="category">
+  <div *ngSwitchCase="'wall'">
+    <ion-row>
+      <profile-wall col-12></profile-wall>
+    </ion-row>
   </div>
-</ion-row>
+
+  <div *ngSwitchCase="'bio'">
+    <ion-list>
+      <ion-card>
+        <ion-card-header>
+          <h3 class="lead">About John Smith</h3>
+        </ion-card-header>
+        <ion-card-content>
+          Throughout David’s career in insurance he always worked closely with annuities and life insurance, whether it was preparing competitor comparisons, performing due diligence for reinsurance acquisitions, pricing products or organizing marketing strategies. David enjoys all aspects of business and investment and studied finance at ASU’s W.P. Carey School of Business, graduating in 2006 with honors. He also holds an Arizona Life and Health insurance license and has produced business.
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+
+  <div *ngSwitchCase="'library'">
+    <ion-row>
+      <library-list col-12></library-list>
+    </ion-row>
+  </div>
+
+</div>

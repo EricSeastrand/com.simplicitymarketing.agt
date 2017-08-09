@@ -11,12 +11,12 @@ export class LibraryListComponent {
     constructor() {
 
         this.libraryCards = [
-            {id: Math.random(), title: "File Name", icon: "fa-file-pdf-o", shareUrl: "#", downloadUrl: "#"},
-            {id: Math.random(), title: "File Name", icon: "fa-file-video-o", shareUrl: "#", downloadUrl: "#"},
-            {id: Math.random(), title: "File Name", icon: "fa-file-audio-o", shareUrl: "#", downloadUrl: "#"},
-            {id: Math.random(), title: "File Name", icon: "fa-file-powerpoint-o", shareUrl: "#", downloadUrl: "#"},
-            {id: Math.random(), title: "File Name", icon: "fa-file-word-o", shareUrl: "#", downloadUrl: "#"},
-            {id: Math.random(), title: "File Name", icon: "fa-file-image-o", shareUrl: "#", downloadUrl: "#"}
+            {id: Math.random(), title: "Glutens ridetis! ", icon: "fa-file-pdf-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "Admirals go with ellipse! ", icon: "fa-file-video-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "Nosily observe a ship. ", icon: "fa-file-audio-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "Shield, modification, and stigma. United assimilations lead to the turbulence.", icon: "fa-file-powerpoint-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "Oddly command a sonic shower. ", icon: "fa-file-word-o", shareUrl: "#", downloadUrl: "#"},
+            {id: Math.random(), title: "Technically feed a vogon. ", icon: "fa-file-image-o", shareUrl: "#", downloadUrl: "#"}
         ]
     }
 

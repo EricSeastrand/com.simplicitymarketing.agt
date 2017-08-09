@@ -18,6 +18,7 @@ import {ProfileTabsComponent} from "../components/profile-tabs/profile-tabs";
 import {LibraryListComponent} from "../components/library-list/library-list";
 import {LoginPage} from "../pages/login/login";
 import {ProfileWallComponent} from "../components/profile-wall/profile-wall";
+import {ProgressBarComponent} from "../components/progress-bar/progress-bar";
 
 @NgModule({
     declarations: [
@@ -32,7 +33,8 @@ import {ProfileWallComponent} from "../components/profile-wall/profile-wall";
         HotAdvisorsPage,
         ProfileTabsComponent,
         LibraryListComponent,
-        ProfileWallComponent
+        ProfileWallComponent,
+        ProgressBarComponent
     ],
     imports: [
         BrowserModule,

@@ -7,8 +7,44 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-col col-12 text-center text-capitalize>
-    <h1 class="lead">Library</h1>
-  </ion-col>
+<ion-content>
+  <ion-row>
+  <ion-grid>
+    <ion-title text-center text-capitalize>
+      <h1 class="lead">Library</h1>
+    </ion-title>
+  </ion-grid>
+  </ion-row>
+
+  <ion-row>
+    <library-list col-12></library-list>
+  </ion-row>
+  <!--<ion-card *ngFor="let card of libraryCards">
+    <ion-card-content>
+      <ion-card-title>
+        <i class="fa {{card.icon}}" aria-hidden="true"></i>
+        {{card.title}}
+      </ion-card-title>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button small color="secondary" (click)="this.share(card.shareUrl)">
+          SHARE
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button small color="primary" (click)="this.download(card.downloadUrl)">
+          DOWNLOAD
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small icon-start (click)="this.remove(card.id)">
+          <ion-icon name='close'></ion-icon>
+          REMOVE
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>-->
+
+  <!---->
 </ion-content>
