@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 
 
@@ -11,7 +11,9 @@ import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 export class LiveStreamingPage {
     videoUrl: SafeResourceUrl;
 
-    constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController) {
-        this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/221976398?autoplay=1&title=0&byline=0&portrait=0')
+    constructor(private domSanitizer: DomSanitizer) {
+        this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(
+            'https://player.vimeo.com/video/221976398?autoplay=1&title=0&byline=0&portrait=0'
+        )
     }
 }

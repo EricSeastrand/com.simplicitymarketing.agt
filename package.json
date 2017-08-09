@@ -1,8 +1,9 @@
 {
-    "name": "sideMenu",
+    "name": "AGTPortal",
     "version": "0.0.1",
-    "author": "Ionic Framework",
-    "homepage": "http://ionicframework.com/",
+    "author": "BubbleUp LLC",
+    "homepage": "https://www.bubbleup.net/",
+    "description": "AGT Portal from Simplicity",
     "private": true,
     "scripts": {
         "clean": "ionic-app-scripts clean",
@@ -45,7 +46,6 @@
         "ionic": "3.7.0",
         "typescript": "2.3.4"
     },
-    "description": "An Ionic project",
     "cordova": {
         "plugins": {
             "cordova-plugin-console": {},
