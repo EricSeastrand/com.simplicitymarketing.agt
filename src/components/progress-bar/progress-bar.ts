@@ -1,10 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
- * Generated class for the ProgressBarComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
+ * https://www.joshmorony.com/build-a-simple-progress-bar-component-in-ionic-2/
  */
 @Component({
   selector: 'progress-bar',
@@ -12,11 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ProgressBarComponent {
 
-  text: string;
-
+    @Input('progress') progress;
   constructor() {
-    console.log('Hello ProgressBarComponent Component');
-    this.text = 'Hello World';
+
   }
 
 }

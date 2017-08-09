@@ -15,11 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PathwayPage {
 
+  public loadProgress: any = 55;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PathwayPage');
-  }
 
 }
